@@ -1,0 +1,29 @@
+2019-06-19  davidjohnston  <dmjohnston@mail.usf.edu>
+
+	* Main.cs:
+	* Info.plist:
+	* AppDelegate.cs:
+	* Entitlements.plist:
+	* Default.png:
+	* Pinterest-PWA.iOS.csproj:
+	* Default@2x.png:
+	* AssemblyInfo.cs:
+	* Default-568h@2x.png:
+	* Default-Portrait.png:
+	* Default-Portrait@2x.png:
+	* LaunchScreen.storyboard:
+	* Icon58.png:
+	* Icon80.png:
+	* Icon87.png:
+	* Icon40.png:
+	* Icon29.png:
+	* Icon20.png:
+	* Icon60.png:
+	* Icon76.png:
+	* Icon180.png:
+	* Icon167.png:
+	* Icon152.png:
+	* Icon120.png:
+	* Icon1024.png:
+	* Contents.json: 
+

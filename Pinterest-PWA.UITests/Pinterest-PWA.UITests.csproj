@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0D13E9BF-7BE8-465A-B961-769D97A39EA1}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Pinterest_PWA.UITests</RootNamespace>
+    <AssemblyName>Pinterest_PWA.UITests</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="NUnit" Version="2.6.4" />
+    <PackageReference Include="Xamarin.UITest" Version="2.2.7" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Pinterest_PWA.iOS\Pinterest_PWA.iOS.csproj">
+      <Project>{D4A5EDDC-3F27-4A5E-9316-D1BD309F90D2}</Project>
+      <Name>Pinterest-PWA.iOS</Name>
+      <ReferenceOutputAssembly>False</ReferenceOutputAssembly>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\Pinterest_PWA.Android\Pinterest_PWA.Android.csproj">
+      <Project>{D6FEF9CE-6E42-4637-8B47-2017B9018584}</Project>
+      <Name>Pinterest-PWA.Android</Name>
+      <ReferenceOutputAssembly>False</ReferenceOutputAssembly>
+      <Private>False</Private>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Tests.cs" />
+    <Compile Include="AppInitializer.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+</Project>
